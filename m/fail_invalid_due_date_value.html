@@ -1,37 +1,67 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta property="finbeeapp" content="goal/create?savings_target=1000&goal_name=はじめての日本茶貯金&category=hobby&due_date=2020-01-01&days=10&image_url=https://finbee.jp/wp-content/themes/finbee-2020/assets/img/company/executives01.jpg" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <meta property="finbeeapp"
+    content="goal/create?savings_target=1000&goal_name=はじめての日本茶貯金&category=hobby&due_date=2020-01-01&days=10&image_url=https://finbee.jp/wp-content/themes/finbee-2020/assets/img/company/executives01.jpg" />
+
+  <style type="text/css">
+    div.test_case_list {
+      max-width: 1000px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h2.test_case_title {
+      max-width: 1000px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h3.test_case_title {
+      max-width: 1000px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
 
   <title>magagine_dummy_web</title>
 </head>
+
 <body>
 
-  <h2>異常系_期日が過去</h2>
-  <h3>days(10)を採用して目標が作成できる</h3>
+  <h2 class="test_case_list">異常系_期日が過去</h2>
+  <h3 class="test_case_list">days(10)を採用して目標が作成できる</h3>
 
-  <a href="index.html">topへ</a><br>
-  <a href="success_all_params_due_date.html">正常系 全パラメータあり_due_date版</a><br>
-  <a href="success_all_params_days.html">正常系 全パラメータあり_days版</a><br>
-  <a href="success_no_due_date.html">正常系 期限無し</a><br>
-  <a href="success_both_due_date_and_days.html">正常系 期日と期間が両方指定される</a><br>
-  <a href="success_no_meta_tag.html">正常系 メタタグ無し</a><br>
-  <a href="fail_no_savings_target.html">異常系_必須パラメータ不足1_目標金額無し</a><br>
-  <a href="fail_no_goal_name.html">異常系_必須パラメータ不足2_目標名無し</a><br>
-  <a href="fail_no_category.html">異常系_必須パラメータ不足3_カテゴリ無し</a><br>
-  <a href="fail_invlaid_too_few_savings_target.html">異常系_必須パラメータ不正1_目標金額1,000円未満</a><br>
-  <a href="fail_invalid_too_much_savings_target.html">異常系_必須パラメータ不正2_目標金額100,000,000円以上</a><br>
-  <a href="fail_invalid_savings_target_type.html">異常系_必須パラメータ不正3_目標金額が数値でない</a><br>
-  <a href="fail_invalid_empty_goal_name.html">異常系_必須パラメータ不正4_目標名がカラ</a><br>
-  <a href="fail_invalid_too_long_goal_name.html">異常系_必須パラメータ不正5_目標名が65文字以上</a><br>
-  <a href="fail_invalid_cateogry.html">異常系_必須パラメータ不正6_存在しないカテゴリ名</a><br>
-  <a href="fail_invalid_due_date_format.html">異常系_任意パラメータ不正1_due_dateのフォーマットが不正</a><br>
-  <a href="fail_invalid_days_type.html">異常系_任意パラメータ不正2_daysが数値ではない</a><br>
-  <a href="fail_invalid_format.html">異常系_フォーマットが不正</a><br>
-  <a href="fail_invalid_image_url.html">異常系_画像URL先に画像がない</a><br>
-  <a href="fail_invalid_due_date_value.html">異常系_期日が過去</a><br>
+  <div class="test_case_list">
+    <a href="index.html">topへ</a><br>
+    <a href="success_all_params_due_date.html">正常系 全パラメータあり_due_date版</a><br>
+    <a href="success_all_params_days.html">正常系 全パラメータあり_days版</a><br>
+    <a href="success_no_due_date.html">正常系 期限無し</a><br>
+    <a href="success_both_due_date_and_days.html">正常系 期日と期間が両方指定される</a><br>
+    <a href="success_no_meta_tag.html">正常系 メタタグ無し</a><br>
+    <a href="fail_no_savings_target.html">異常系_必須パラメータ不足1_目標金額無し</a><br>
+    <a href="fail_no_goal_name.html">異常系_必須パラメータ不足2_目標名無し</a><br>
+    <a href="fail_no_category.html">異常系_必須パラメータ不足3_カテゴリ無し</a><br>
+    <a href="fail_invlaid_too_few_savings_target.html">異常系_必須パラメータ不正1_目標金額1,000円未満</a><br>
+    <a href="fail_invalid_too_much_savings_target.html">異常系_必須パラメータ不正2_目標金額100,000,000円以上</a><br>
+    <a href="fail_invalid_savings_target_type.html">異常系_必須パラメータ不正3_目標金額が数値でない</a><br>
+    <a href="fail_invalid_empty_goal_name.html">異常系_必須パラメータ不正4_目標名がカラ</a><br>
+    <a href="fail_invalid_too_long_goal_name.html">異常系_必須パラメータ不正5_目標名が65文字以上</a><br>
+    <a href="fail_invalid_cateogry.html">異常系_必須パラメータ不正6_存在しないカテゴリ名</a><br>
+    <a href="fail_invalid_due_date_format.html">異常系_任意パラメータ不正1_due_dateのフォーマットが不正</a><br>
+    <a href="fail_invalid_days_type.html">異常系_任意パラメータ不正2_daysが数値ではない</a><br>
+    <a href="fail_invalid_format.html">異常系_フォーマットが不正</a><br>
+    <a href="fail_invalid_image_url.html">異常系_画像URL先に画像がない</a><br>
+    <a href="fail_invalid_due_date_value.html">異常系_期日が過去</a><br>
+  </div>
 
 </body>
+
 </html>
